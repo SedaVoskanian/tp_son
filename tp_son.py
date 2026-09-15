@@ -20,7 +20,13 @@ son=f(x,440)
 
 plt.plot(x[1:2205],son[1:2205],label="son 0.05s")
 plt.legend()
-plt.show()
+#plt.show()
+
+r=[0]
+r1=[2**(1/k) for k in range (1,13)]
+ratio=np.concatenate((r,r1))
+
+print(ratio[0])
 
 #display(Audio(signal,rate))
 
